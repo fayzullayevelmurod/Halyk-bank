@@ -433,15 +433,130 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .container {
-  max-width: 1337px;
+  max-width: 1230rem;
   margin: 0 auto;
+  padding: 0 15rem;
 }
-@media (max-width: 1024px) {
-  .container {
-    padding: 0 20px;
+
+.section_title {
+  font-weight: 700;
+  font-size: 36rem;
+  line-height: 140%;
+  text-align: center;
+  color: #303431;
+}
+@media (max-width: 850px) {
+  .section_title {
+    font-size: 26rem;
   }
 }
 
 .section-top {
-  margin-top: 160px;
+  margin-top: 120rem;
+}
+@media (max-width: 850px) {
+  .section-top {
+    margin-top: 40rem;
+  }
+}
+
+.comment .section_title {
+  margin-bottom: 120rem;
+}
+@media (max-width: 850px) {
+  .comment .section_title {
+    margin-bottom: 80rem;
+  }
+}
+.comment_in {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40rem;
+}
+@media (max-width: 850px) {
+  .comment_in {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 100rem;
+  }
+}
+.comment_block {
+  background: #f7f7f7;
+  position: relative;
+  padding: 70rem 40rem 40rem 40rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.comment_block img {
+  width: 100rem;
+  height: 100rem;
+  border-radius: 50%;
+  position: absolute;
+  top: -50rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.comment_block h3 {
+  font-weight: 700;
+  font-size: 16rem;
+  line-height: 148%;
+  text-align: center;
+  color: #000000;
+}
+.comment_block span {
+  font-weight: 700;
+  font-size: 12rem;
+  line-height: 199%;
+  text-align: center;
+  color: #757575;
+  display: block;
+}
+.comment_block p {
+  margin-top: 20rem;
+  font-weight: 700;
+  font-size: 14rem;
+  line-height: 176%;
+  text-align: center;
+  color: #000000;
+}
+
+.footer {
+  padding: 44rem 0;
+}
+.footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16rem;
+}
+@media (max-width: 850px) {
+  .footer .container {
+    flex-direction: column;
+    text-align: center;
+    gap: 24rem;
+  }
+}
+.footer .logo {
+  width: 245rem;
+  height: 80rem;
+}
+@media (max-width: 850px) {
+  .footer .logo {
+    width: 150rem;
+    height: 48rem;
+  }
+}
+.footer p {
+  max-width: 385rem;
+  font-weight: 700;
+  font-size: 16rem;
+  line-height: 150%;
+  color: #000000;
+}
+@media (max-width: 850px) {
+  .footer p {
+    max-width: 100%;
+    font-size: 14rem;
+  }
 }/*# sourceMappingURL=style.css.map */

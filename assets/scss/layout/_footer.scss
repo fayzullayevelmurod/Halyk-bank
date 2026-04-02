@@ -1,3 +1,39 @@
 .footer {
-  
+  padding: 44rem 0;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16rem;
+
+    @include media('md') {
+      flex-direction: column;
+      text-align: center;
+      gap: 24rem;
+    }
+  }
+
+  .logo {
+    width: 245rem;
+    height: 80rem;
+
+    @include media('md') {
+      width: 150rem;
+      height: 48rem;
+    }
+  }
+
+  p {
+    max-width: 385rem;
+    font-weight: 700;
+    font-size: 16rem;
+    line-height: 150%;
+    color: $color-black;
+
+    @include media('md') {
+      max-width: 100%;
+      font-size: 14rem;
+    }
+  }
 }

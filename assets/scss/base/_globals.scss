@@ -112,15 +112,27 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .container {
-  max-width: calc(1337px);
+  max-width: calc(1200rem + 30rem);
   margin: 0 auto;
+  padding: 0 15rem;
+}
 
-  @include media('lg') {
-    padding: 0 20px;
+.section_title {
+  font-weight: 700;
+  font-size: 36rem;
+  line-height: 140%;
+  text-align: center;
+  color: $color-black-2;
+
+  @include media('md') {
+    font-size: 26rem;
   }
-
 }
 
 .section-top {
-  margin-top: 160px;
+  margin-top: 120rem;
+
+  @include media('md') {
+    margin-top: 40rem;
+  }
 }
