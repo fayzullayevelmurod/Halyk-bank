@@ -1,0 +1,105 @@
+// contact
+.contact {
+  background: $color-green;
+  padding: 24rem 0;
+
+  &_in {
+    border-radius: 16rem;
+    background: $color-white;
+    padding: 14rem 20rem;
+  }
+
+  h2 {
+    font-weight: 900;
+    font-size: 26rem;
+    line-height: 171%;
+    color: $color-black;
+    text-align: center;
+    margin-bottom: 24rem;
+
+    @include media('md') {
+      font-size: 20rem;
+      line-height: 150%;
+    }
+  }
+
+  form {
+
+    .form_in {
+      display: flex;
+      gap: 20rem;
+
+      @include media('md') {
+        flex-direction: column;
+      }
+    }
+
+    input {
+      width: 100%;
+      border: 2rem solid $color-black-2;
+      border-radius: 10rem;
+      padding: 10rem 20rem;
+      font-weight: 700;
+      font-size: 16rem;
+      color: $color-black;
+      height: 50rem;
+    }
+
+    .green_btn {
+      padding: 10rem 20rem;
+      width: 240rem;
+      flex-shrink: 0;
+      height: 50rem;
+      border-radius: 12rem;
+
+      @include media('md') {
+        width: 100%;
+      }
+    }
+
+    .custom-checkbox {
+      display: flex;
+      align-items: center;
+      gap: 12rem;
+      cursor: pointer;
+      margin-top: 24rem;
+
+      input {
+        display: none;
+      }
+
+      .checkmark {
+        width: 24rem;
+        height: 24rem;
+        border: 2rem solid $color-black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+
+        svg {
+          width: 13rem;
+          height: 10rem;
+          opacity: 0;
+          transform: scale(0.5);
+          transition: all 0.3s ease;
+        }
+      }
+
+      input:checked + .checkmark {
+
+        svg {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 14rem;
+        color: $color-black;
+      }
+    }
+  }
+}
+// contact
