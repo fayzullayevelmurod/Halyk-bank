@@ -472,6 +472,47 @@ p, h1, h2, h3, h4, h5, h6 {
   background: #11bb91;
 }
 
+.portfolio {
+  padding: 120rem 0;
+  border-top: 3rem solid #11bb91;
+  border-bottom: 3rem solid #11bb91;
+}
+@media (max-width: 850px) {
+  .portfolio {
+    padding: 40rem 0;
+  }
+}
+.portfolio .section_title {
+  margin-bottom: 32rem;
+}
+@media (max-width: 850px) {
+  .portfolio .section_title {
+    margin-bottom: 24rem;
+  }
+}
+.portfolio_in {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40rem;
+}
+@media (max-width: 850px) {
+  .portfolio_in {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20rem;
+  }
+}
+@media (max-width: 640px) {
+  .portfolio_in {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 12rem;
+  }
+}
+.portfolio_block {
+  border-radius: 24rem;
+  border: 4rem solid #11bb91;
+}
+
 .platform .section_title {
   margin-bottom: 48rem;
 }
