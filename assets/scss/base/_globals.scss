@@ -136,3 +136,15 @@ p, h1, h2, h3, h4, h5, h6 {
     margin-top: 40rem;
   }
 }
+
+.green_btn {
+  font-weight: 600;
+  font-size: 16rem;
+  line-height: 174%;
+  text-align: center;
+  color: $color-white;
+  border-radius: 15rem;
+  height: 60rem;
+  padding: 10rem 30rem;
+  background: $color-green;
+}
