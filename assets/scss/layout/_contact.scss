@@ -43,6 +43,10 @@
       font-size: 16rem;
       color: $color-black;
       height: 50rem;
+
+      @include media('md') {
+        font-size: 12rem;
+      }
     }
 
     .green_btn {
@@ -64,6 +68,11 @@
       cursor: pointer;
       margin-top: 24rem;
 
+      @include media('md') {
+        gap: 8rem;
+        margin-top: 12rem;
+      }
+
       input {
         display: none;
       }
@@ -77,12 +86,22 @@
         justify-content: center;
         transition: all 0.3s ease;
 
+        @include media('md') {
+          width: 16rem;
+          height: 16rem;
+        }
+
         svg {
           width: 13rem;
           height: 10rem;
           opacity: 0;
           transform: scale(0.5);
           transition: all 0.3s ease;
+
+          @include media('md') {
+            width: 10rem;
+            height: 8rem;
+          }
         }
       }
 
